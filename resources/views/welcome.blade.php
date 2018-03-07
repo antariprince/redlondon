@@ -75,9 +75,6 @@
               <a class="nav-link js-scroll-trigger" href="#upper">Upper</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#attic">Attic</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#locationmap">Location</a>
             </li>
             @endif
@@ -201,7 +198,6 @@
     @include('modals.ricoh')
     @include('modals.ground')
     @include('modals.second')
-    @include('modals.attic')
 
     @endif
     
@@ -216,7 +212,6 @@
     @include('sections.facade')
     @include('sections.ground')
     @include('sections.second')
-    @include('sections.attic')
     @include('sections.maps')
     @endif
     
