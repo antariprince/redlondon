@@ -10,7 +10,7 @@
     <meta name="robots" content="index,follow">
     <meta name="author" content="introvertwebmaster">
 
-    <title>House for sale</title>
+    <title>House for sale - Play</title>
 
     <!-- Bootstrap core CSS -->
     <link href="{{ asset('app/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
