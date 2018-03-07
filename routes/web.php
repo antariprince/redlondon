@@ -30,7 +30,12 @@ Route::get('/logout',[
 	'as' => 'social.logout'
 ]);
 
-//Auth::routes();
+Route::get('/users',[
+	'uses' => 'UsersController@index',
+	'as' => 'users.index'
+]);
+
+Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 
