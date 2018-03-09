@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\User;
 use Auth;
 use Socialite;
+use Newsletter;
+
 use Illuminate\Http\Request;
 
 class SocialController extends Controller
@@ -33,6 +35,7 @@ class SocialController extends Controller
 			'email' => $user->getEmail()
 		]);
         $fbUser = User::where('email',$user->getEmail())->first();
+        Newsletter::subscribe($user->getEmail(), ['firstname'=>$user->getName()]);
 		}
         if($fbUser){
 		Auth::login($fbUser, true);
