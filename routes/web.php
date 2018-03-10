@@ -15,6 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/email',[
+	'uses' => 'SocialController@testEmail',
+	'as' => 'email'
+]);
+
 Route::get('/terms-of-use',[
 	'uses' => 'SocialController@terms',
 	'as' => 'social.terms'
