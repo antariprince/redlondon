@@ -38,7 +38,8 @@ return [
     'facebook' => [
         'client_id' => env('FACEBOOK_APP_ID'),         // Your GitHub Client ID
         'client_secret' => env('FACEBOOK_APP_SECRET'), // Your GitHub Client Secret
-        'redirect' => 'http://redlondon.booksforcast.com/login/facebook/callback',
+        'redirect' => 'http://playground.test/login/facebook/callback',
+        //'redirect' => 'http://redlondon.booksforcast.com/login/facebook/callback',
     ],
 
 ];

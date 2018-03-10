@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\User;
+use App\Mail\UserRegistered;
+use Mail;
 use Auth;
 use Socialite;
 use Newsletter;
@@ -36,6 +38,7 @@ class SocialController extends Controller
 		]);
         $fbUser = User::where('email',$user->getEmail())->first();
         Newsletter::subscribe($user->getEmail(), ['firstname'=>$user->getName()]);
+        Mail::to('antariprince@gmail.com')->send(new UserRegistered());
 		}
         if($fbUser){
 		Auth::login($fbUser, true);
