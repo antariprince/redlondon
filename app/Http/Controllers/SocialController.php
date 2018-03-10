@@ -17,6 +17,10 @@ class SocialController extends Controller
         return Socialite::driver('facebook')->redirect();
     }
 
+    public function testEmail(){
+        dd(Mail::to('antariprince@gmail.com')->send(new UserRegistered()));
+    }
+
     public function handleProviderCallBack(){
         $user = Socialite::driver('facebook')->user();
 
