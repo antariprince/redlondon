@@ -257,7 +257,7 @@
           <div class="col-lg-12 mr-auto text-center col-centered">
             <i class="fa fa-envelope-o fa-3x mb-3 sr-contact"></i>
             <p>
-              <a href="mailto:info@booksforcast.com">info@booksforcast.com</a>
+              <a href="mailto:me@antariprince.com">me@antariprince.com</a>
             </p>
           </div>
         </div>
